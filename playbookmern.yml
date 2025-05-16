@@ -1,0 +1,6 @@
+- name: Install the common packages 
+  become: yes 
+  hosts: all 
+  gather_facts : yes
+  roles: 
+    - common  
